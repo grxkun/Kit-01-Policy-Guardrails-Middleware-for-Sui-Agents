@@ -39,3 +39,15 @@ export type {
   PolicyMiddlewareOptions,
   ActionExecutor,
 } from './middleware/types.js'
+
+// Audit (blockchain-agnostic)
+export { AuditLogger, InMemoryAuditSink, FileAuditSink } from './audit/AuditLogger.js'
+export type { AuditSink } from './audit/AuditLogger.js'
+export type {
+  AuditEvent,
+  AuditEventType,
+  AuditFinding,
+  AuditQueryFilter,
+  AuditableAction,
+  AuditableReport,
+} from './audit/types.js'
